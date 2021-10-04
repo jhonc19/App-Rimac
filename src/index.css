@@ -1,0 +1,367 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.coverage-checkbox:checked {
+  @apply right-0 border-green-400;
+  right: 0;
+  border-color: #68d391;
+}
+.coverage-checkbox:checked + .toggle-label {
+  @apply bg-green-400;
+  background-color: #68d391;
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Layoud */
+.container {
+  @apply max-w-screen-xl m-auto;
+}
+
+/* Header */
+.header-main-content {
+  @apply flex justify-between place-items-center h-20 py-5 px-8;
+}
+
+.header-text-question {
+  @apply hidden lg:block px-6 text-xs text-gray-paragraph cursor-pointer;
+}
+
+.header-text-contact {
+  @apply flex justify-between place-items-center text-acian-100 w-20 lg:w-28 text-sm font-roboto;
+}
+
+/* Form */
+.form-main-content {
+  @apply text-base lg:w-80 m-auto;
+}
+
+.form-title {
+  @apply pb-4 text-2xl lg:text-3xl;
+}
+
+/* Button */
+.button {
+  @apply w-full text-sm px-4 font-medium font-lato tracking-wide transition-colors duration-200 transform rounded-lg focus:outline-none uppercase;
+}
+
+.button-icon {
+  @apply absolute right-10 top-1/3 bottom-1/3 text-lg;
+}
+
+/* CheckBox */
+.checkbox-main-content {
+  @apply flex w-full my-4;
+}
+
+.checkbox-input-content {
+  @apply inline-flex mt-2;
+}
+
+.checkbox-input {
+  @apply h-5 w-5 checked:bg-green-500;
+}
+.checkbox-text {
+  @apply pl-2 py-1 text-xs text-gray-input3 leading-6;
+}
+
+/* TextField */
+.textfield-main-content {
+  @apply w-full mt-4;
+}
+
+.textfield {
+  @apply block w-full px-4 py-4  placeholder-gray-input3 bg-white border border-gray-300 rounded-md focus:border-red-rimac focus:outline-none;
+}
+
+/* Text Field Options */
+.textfieldoptions-main-content {
+  @apply flex w-full mt-4;
+}
+
+.textfieldoptions-select {
+  @apply group uppercase rounded border appearance-none border-gray-300 py-4 focus:outline-none focus:ring-red-200 pl-3 pr-10 text-gray-titulo;
+}
+
+.textfieldoptions-icon {
+  @apply absolute right-0 top-0 h-full w-10 appearance-none text-center text-red-rimac pointer-events-none flex items-center justify-center;
+}
+
+.textfieldoptions {
+  @apply block w-full px-4 py-4 placeholder-gray-input3 bg-white border border-gray-300 rounded-md focus:border-red-rimac focus:outline-none;
+}
+
+/* Page Home */
+.home-main-content {
+  @apply flex flex-col lg:flex-row px-8 py-2 font-roboto h-full;
+}
+
+.home-form-content {
+  @apply flex lg:w-6/12 content-center;
+}
+
+/* Page Auto Plan */
+.autoplan-main-content {
+  @apply flex flex-col lg:flex-row font-roboto h-full;
+}
+
+.autoplan-content {
+  @apply flex flex-col lg:flex-row w-full lg:p-8 lg:w-2/3;
+}
+
+.autoplan-return-content {
+  @apply hidden lg:flex items-center cursor-pointer;
+}
+
+.autoplan-return-icon {
+  @apply text-red-300 text-3xl font-light;
+}
+
+.autoplan-return-text {
+  @apply pl-3 font-lato text-xs font-light text-gray-input3;
+}
+
+.autoplan-welcome-content {
+  @apply px-6 pt-6;
+}
+
+.autoplan-welcome-name {
+  @apply hidden lg:block font-lato text-3xl text-gray-titulo;
+}
+
+.autoplan-welcome-text1 {
+  @apply block lg:hidden font-lato text-3xl text-gray-titulo;
+}
+
+.autoplan-welcome-text2 {
+  @apply text-gray-paragraph text-base pt-2 lg:pb-0 lg:px-0;
+}
+
+.autoplan-datacar-content {
+  @apply flex border-4 border-gray-100 p-6 mt-10 mb-12 rounded-xl mx-6 lg:mx-0;
+}
+
+.autoplan-datacar-text {
+  @apply text-lg lg:text-xl font-lato;
+}
+
+.autoplan-datacar-image {
+  @apply absolute -mt-14 lg:-mt-11;
+}
+
+.autoplan-amount-content {
+  @apply px-6 lg:px-0 pt-6 w-full block lg:flex lg:place-content-between;
+}
+
+.autoplan-amount-content-minmax {
+  @apply flex flex-col pb-4 w-full lg:w-1/2 my-auto;
+}
+
+.autoplan-amountinput-content {
+  @apply flex flex-row h-14 w-full lg:w-1/2 rounded-lg relative bg-transparent mt-1 border-gray-300 border;
+}
+
+.autoplan-amountinput-button {
+  @apply text-gray-600 hover:text-gray-700 h-full w-20 cursor-pointer focus:outline-none;
+}
+
+.autoplan-amountinput {
+  @apply focus:outline-none text-center w-full text-base hover:text-black focus:text-black  flex items-center text-gray-titulo  outline-none;
+}
+
+.autoplan-coverage-title {
+  @apply text-xl text-gray-titulo pt-4 pb-6 px-6 lg:px-0;
+}
+
+.autoplan-coverage-content-tab {
+  @apply flex w-full text-gray-titulo text-center text-xs font-lato border-gray-300 border-b font-medium;
+}
+
+.autoplan-coverage-tab {
+  @apply cursor-pointer pb-4 px-3;
+}
+
+.autoplan-coverage-tab.activo {
+  @apply text-red-rimac border-b-2 border-red-rimac;
+}
+
+.autoplan-amountmonth-content {
+  @apply flex justify-between lg:block h-20 lg:h-full w-full lg:w-1/2 py-5 px-6 lg:px-20;
+}
+
+.autoplan-amountmonth-amount-content {
+  @apply flex lg:justify-between lg:align-middle lg:pb-5 lg:border-b-2 border-gray-200 lg:mb-5 mr-10;
+}
+
+.autoplan-amountmonth-text1 {
+  @apply font-lato text-xs text-gray-titulo pb-2;
+}
+
+.autoplan-amountmonth-text {
+  @apply text-xs text-gray-paragraph;
+}
+
+.autoplan-amountmonth-amount {
+  @apply font-lato text-xl lg:text-3xl text-gray-titulo;
+}
+
+.autoplan-include-content {
+  @apply text-gray-titulo pb-8 hidden lg:block;
+}
+
+.autoplan-include {
+  @apply flex items-center text-sm text-gray-paragraph pl-1 pb-1;
+}
+
+/* Coverage */
+.coverage-main-content {
+  @apply flex p-4 border-b-2 border-gray-200;
+}
+
+.coverage-name {
+  @apply text-gray-titulo text-base lg:text-xl lg:w-full w-2/3;
+}
+
+.coverage-icon-text {
+  @apply hidden lg:block text-2xl text-red-rimac cursor-pointer;
+}
+
+.coverage-checkbox-content {
+  @apply relative lg:hidden inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in;
+}
+
+.coverage-checkbox {
+  @apply absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer;
+}
+
+.coverage-checkbox-label {
+  @apply block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer;
+}
+
+.coverage-added-content {
+  @apply hidden lg:flex items-center py-2;
+}
+
+.coverage-added-icon {
+  @apply text-2xl text-gray-300 cursor-pointer;
+}
+
+.coverage-added-text {
+  @apply text-sm pl-1 text-acian-200 cursor-pointer;
+}
+
+.coverage-description {
+  @apply transition-transform delay-700 font-roboto text-sm text-gray-paragraph text-justify lg:pt-0 pt-2;
+}
+
+.coverage-description-content {
+  @apply flex text-acian-200 items-center lg:hidden pt-4;
+}
+
+.coverage-description-text {
+  @apply text-xs pr-1 cursor-pointer;
+}
+
+.coverage-description-icon {
+  @apply text-base cursor-pointer;
+}
+
+/* Steps Panel */
+.steps-mobile-content {
+  @apply flex lg:hidden place-content-around items-center h-12 px-8;
+}
+
+.steps-mobile-icon {
+  @apply text-3xl font-light text-gray-200;
+}
+
+.steps-mobile-text {
+  @apply text-sm font-lato text-gray-paragraph;
+}
+
+.steps-mobile-barra {
+  @apply bg-gray-300 h-2 w-40 rounded-2xl;
+}
+
+.steps-desktop-content {
+  @apply hidden lg:block w-1/3 bg-gray-50 p-12;
+}
+
+.steps-desktop-number {
+  @apply flex-shrink-0 w-6 h-6 rounded-full inline-flex items-center justify-center relative z-10;
+}
+
+.steps-desktop-text {
+  @apply flex-grow pl-4 my-auto;
+}
+
+/* Panel Home Desktop */
+.homed-main-content {
+  @apply hidden lg:block w-6/12 bg-panel-background-desktop -ml-8 bg-cover h-full;
+}
+
+.homed-text-content {
+  @apply py-1;
+}
+
+.homed-text1 {
+  @apply font-medium text-xs text-gray-titulo;
+}
+
+.homed-text2 {
+  @apply text-4xl leading-tight font-lato text-gray-titulo;
+}
+
+.homed-text3 {
+  @apply text-base leading-6 text-gray-paragraph;
+}
+
+.homed-text4 {
+  @apply text-xs leading-6 text-gray-input3;
+}
+
+/* Panel Home Mobile */
+.homem-main-content {
+  @apply flex md:hidden lg:w-5/12;
+}
+
+.homem-text2 {
+  @apply text-3xl leading-tight font-lato text-gray-titulo;
+}
+
+/* Gratitude */
+.gratitude-main-content {
+  @apply flex flex-col lg:flex-row w-full lg:py-32;
+}
+
+.gratitude-text-content {
+  @apply w-full lg:w-1/2 font-medium lg:font-normal text-2xl lg:text-4xl text-gray-titulo font-lato py-16 px-8;
+}
+
+.gratitude-text {
+  @apply font-roboto text-base text-gray-input3 pt-5 pb-10;
+}
+
+.gratitude-email {
+  @apply font-roboto text-base text-gray-paragraph cursor-pointer;
+}
