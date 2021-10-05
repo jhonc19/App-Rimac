@@ -221,7 +221,7 @@ const AutoPlan = ({ history }: RouteComponentProps) => {
           <Button
             type="submit"
             name="LO QUIERO"
-            height={2}
+            height={3}
             onClick={() => history.push('/gratitude')}
           />
         </div>
